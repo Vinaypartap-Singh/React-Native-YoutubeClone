@@ -125,7 +125,7 @@ export default function HomeScreen() {
         <View>
           {videos.map((data) => {
             return (
-              <TouchableOpacity style={{ marginVertical: 20 }}>
+              <TouchableOpacity key={data.id} style={{ marginVertical: 20 }}>
                 <Image source={data.thumbnail} style={{ height: 280 }} />
                 <View
                   style={{
